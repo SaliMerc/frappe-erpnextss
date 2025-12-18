@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-18 15:58:11.598996",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item_details_section",
+  "item",
+  "item_name",
+  "warehouse_details_section",
+  "warehouse",
+  "item_name_copy",
+  "stock_details_section",
+  "old_stock",
+  "new_stock",
+  "change_amount",
+  "reason",
+  "column_break_rmxa",
+  "changed_by",
+  "change_date",
+  "reference_doctype",
+  "reference_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_details_section",
+   "fieldtype": "Section Break",
+   "label": "Item Details"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fetch_if_empty": 1,
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "warehouse_details_section",
+   "fieldtype": "Section Break",
+   "label": "Warehouse Details"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "warehouse.warehouse_name",
+   "fetch_if_empty": 1,
+   "fieldname": "item_name_copy",
+   "fieldtype": "Data",
+   "label": "Warehouse Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_details_section",
+   "fieldtype": "Section Break",
+   "label": "Stock Details"
+  },
+  {
+   "fieldname": "old_stock",
+   "fieldtype": "Float",
+   "label": "Old Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "new_stock",
+   "fieldtype": "Float",
+   "label": "New Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "change_amount",
+   "fieldtype": "Float",
+   "label": "Change Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Select",
+   "label": "Reason",
+   "options": "Sale\nPurchase\nAdjustment\nDamage\nReturn"
+  },
+  {
+   "fieldname": "column_break_rmxa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "changed_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Changed By",
+   "options": "User",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "now",
+   "fieldname": "change_date",
+   "fieldtype": "Datetime",
+   "label": "Change Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "label": "Reference Doctype",
+   "options": "Sales Tracker"
+  },
+  {
+   "fetch_from": "reference_doctype.sales_person",
+   "fetch_if_empty": 1,
+   "fieldname": "reference_name",
+   "fieldtype": "Data",
+   "label": "Reference Name"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-18 17:19:21.113795",
+ "modified_by": "Administrator",
+ "module": "Inventory Management",
+ "name": "Stock Audit Logs",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Sale"
+  },
+  {
+   "color": "Purple",
+   "title": "Purchase"
+  },
+  {
+   "color": "Blue",
+   "title": "Adjustment"
+  },
+  {
+   "color": "Red",
+   "title": "Damage"
+  },
+  {
+   "color": "Orange",
+   "title": "Return"
+  }
+ ]
+}

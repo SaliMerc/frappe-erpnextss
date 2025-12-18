@@ -1,1 +1,4 @@
 Labs App
+Airplane
+Airplane Mode
+Inventory Management

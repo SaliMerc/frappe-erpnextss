@@ -1,0 +1,121 @@
+{
+ "charts": [
+  {
+   "chart_name": "Airplane Tickets",
+   "label": "Airplane Tickets"
+  },
+  {
+   "chart_name": "Flight Passengers",
+   "label": "Flight Passengers"
+  }
+ ],
+ "content": "[{\"id\":\"wHPoIeUdU7\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Shortcuts</span>\",\"col\":12}},{\"id\":\"m74O8xvlAb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airline\",\"col\":3}},{\"id\":\"jfHXIdECQJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airplane Ticket\",\"col\":3}},{\"id\":\"VyVvZ56Qu4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Flight Passenger\",\"col\":3}},{\"id\":\"xPb39FNocm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airport\",\"col\":3}},{\"id\":\"6thsRR7tFB\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Cards</b></span>\",\"col\":12}},{\"id\":\"tXjI-varYj\",\"type\":\"card\",\"data\":{\"card_name\":\"Card 1\",\"col\":4}},{\"id\":\"tdEoZp_nqJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Card 2\",\"col\":4}},{\"id\":\"cOb2DWBzA0\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Airplane Tickets\",\"col\":12}},{\"id\":\"ZykBfYCuwa\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Flight Passengers\",\"col\":12}}]",
+ "creation": "2025-12-15 10:21:09.633426",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "arrow-right",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "My New Workspace",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Card 1",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Airplane",
+   "link_count": 0,
+   "link_to": "Airplane",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Airport",
+   "link_count": 0,
+   "link_to": "Airport",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Card 2",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "The airports",
+   "link_count": 0,
+   "link_to": "My airports",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Airport",
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-12-18 16:36:18.746832",
+ "modified_by": "Administrator",
+ "module": "Labs App",
+ "name": "My New Workspace",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Home",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Airline",
+   "link_to": "Airline",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Airplane Ticket",
+   "link_to": "Airplane Ticket",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Flight Passenger",
+   "link_to": "Flight Passenger",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Airport",
+   "link_to": "Airport",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "My New Workspace"
+}
