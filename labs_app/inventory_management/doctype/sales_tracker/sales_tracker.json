@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{###}-Sale for {customer_name}",
  "creation": "2025-12-18 15:27:33.022058",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,13 +9,13 @@
   "primary_details_section",
   "customer",
   "customer_name",
+  "column_break_ikgw",
   "sales_person",
+  "sales_person_name",
   "amounts_and_payments_section",
   "total_amount",
-  "discount_amount",
-  "grand_total",
-  "column_break_quyu",
   "payment_status",
+  "column_break_quyu",
   "invoice_pdf",
   "notes",
   "items_details_section",
@@ -29,7 +30,6 @@
   {
    "fieldname": "customer",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
@@ -58,18 +58,8 @@
   {
    "fieldname": "total_amount",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Total Amount",
-   "read_only": 1
-  },
-  {
-   "fieldname": "discount_amount",
-   "fieldtype": "Currency",
-   "label": "Discount Amount"
-  },
-  {
-   "fieldname": "grand_total",
-   "fieldtype": "Currency",
-   "label": "Grand Total",
    "read_only": 1
   },
   {
@@ -80,6 +70,8 @@
    "default": "Draft",
    "fieldname": "payment_status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Payment Status",
    "options": "Draft\nPending\nPaid\nCancelled"
   },
@@ -103,15 +95,28 @@
    "fieldtype": "Table",
    "label": "Items",
    "options": "Sales Tracker Item"
+  },
+  {
+   "fieldname": "column_break_ikgw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sales_person.full_name",
+   "fieldname": "sales_person_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sales Person Name",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-18 17:19:07.659345",
+ "modified": "2025-12-18 23:46:59.245066",
  "modified_by": "Administrator",
  "module": "Inventory Management",
  "name": "Sales Tracker",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
