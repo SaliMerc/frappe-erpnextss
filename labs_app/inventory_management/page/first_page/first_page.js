@@ -12,6 +12,8 @@ let $btn = page.set_primary_action('New', () =>frappe.msgprint("clicked"))
 
 let $btnone = page.set_secondary_action('Refresh', () =>frappe.msgprint("refreshed"))
 
+let $btnotwo = page.set_secondary_action('Woow', () =>frappe.msgprint("wowed"))
+
 page.add_menu_item('Send  Mail', () =>frappe.msgprint('Clicked send mail'))
 page.add_menu_item('end', () =>frappe.msgprint('Clicked send mail'))
 page.add_menu_item('il', () =>frappe.msgprint('Clicked send mail'))
